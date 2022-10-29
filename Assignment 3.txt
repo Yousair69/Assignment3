@@ -1,0 +1,114 @@
+1) Create a list of names and print all names using list.
+
+void main(){  
+   List<String> names = ["Ahmed", "Bilal", "Kaif"];
+   print(names);
+ }
+
+2) Create an empty list of type string called days. Use the add method to add names of 7 days and print all days.
+
+void main() {
+  List<String> days = [];
+  days.addAll(
+      ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]);
+  print(days);
+}
+
+
+
+Q3.Add your 7 friend names to the list. Use where to find a day name that starts with alphabet a.
+
+void main() {
+  List<String> names = [
+    "Saim",
+    "Ahmed",
+    "Taha",
+    "Wasi",
+    "Talha",
+    "Arbaz",
+    "Sam"
+  ];
+
+  List<String> startWithA =
+      names.where((element) => element.startsWith("A")).toList();
+
+  print(startWithA);
+}
+
+Q.6:
+Create Map variable name world then inside it create countries Map (dart Map) and using key, value pair assign country, capitalCity, currency and language to it.
+Search for ".forEach()" mehtod and using it print all the value of world variable.
+
+void main() {
+  Map<String,String> countryCapital = {
+    'USA': 'Washington, D.C ',
+    'Lanugage': 'English',
+    'Currency': 'Dollar'};
+countryCapital = {
+    'Pakistan': 'Islamabad',
+    'Lanugage': 'Urdu',
+    'Currency': 'Rupees' };
+ countryCapital = {   
+    'China': 'Beijing',
+    'Lanugage': 'Mandarin',
+    'Currency': 'Renminbi'
+  };
+  countryCapital.forEach((key, value) {print(countryCapital);});
+}
+
+Q.7:
+Map<String, double> mathMarks = {
+  'ram': 30,
+  'mark': 32,
+  'harry': 88,
+  'raj': 69,
+  'john': 15,
+};
+
+Using ".removeWhere()" method remove key, value where value <= 30 then print the updated map mathMarks variable.
+
+
+void main() {
+  Map<String, double> mathMarks = {
+    "ram": 30,
+    "mark": 32,
+    "harry": 88,
+    "raj": 69,
+    "john": 15,
+  };
+
+  mathMarks.removeWhere((key, value) => value < 30);
+
+  print(mathMarks);
+}
+
+
+
+Q.8:
+Map<String, double> expenses = {
+  'sun': 3000.0,
+  'mon': 3000.0,
+  'tue': 3234.0,
+};
+
+Check if "fri" exist in expanses; if exist change it's value to 5000.0 otherwise add 'fri' to expenses and set its value to 5000.0 then print expenses.
+
+void main() {
+ 
+  Map<String, double> expenses = {
+    'sun': 3000.0,
+    'mon': 3000.0,
+    'tue': 3234.0,
+    'fri': 5000.0,
+  };
+  
+  print("All keys of Map: ${expenses.keys}");
+  print("All values of Map: ${expenses.values}");
+  print("Is Map empty: ${expenses.isEmpty}");
+  print("Is Map empty: ${expenses.isEmpty}");
+  print("Length of map is: ${expenses.length}");
+
+
+}
+
+
